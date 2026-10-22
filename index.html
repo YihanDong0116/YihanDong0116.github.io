@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yihan Dong | The University of Tokyo</title>
+  <meta name="description" content="Academic personal website of Yihan Dong, Academic Specialist at The University of Tokyo specialising in LLM-based Multi-Agent Systems." />
+  <link rel="alternate" hreflang="en" href="./" />
+  <link rel="alternate" hreflang="ja" href="./ja/" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="./" class="text-lg font-bold text-slate-900 tracking-tight hover:text-brand-700 transition">
+        Yihan Dong <!--[cite: 1] -->
+      </a>
+      <nav class="flex items-center gap-4 sm:gap-6 text-sm font-medium">
+        <a href="#about" class="text-slate-600 hover:text-brand-700 transition">About</a>
+        <a href="#research" class="text-slate-600 hover:text-brand-700 transition">Research</a>
+        <a href="#publications" class="text-slate-600 hover:text-brand-700 transition">Publications</a>
+        <a href="#experience" class="hidden sm:inline text-slate-600 hover:text-brand-700 transition">Career</a>
+        <a href="#awards" class="hidden sm:inline text-slate-600 hover:text-brand-700 transition">Awards</a>
+        
+        <!-- Language Switcher -->
+        <a href="./ja/" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md border border-slate-300 text-slate-700 hover:bg-slate-100 transition" title="Switch to Japanese">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+          日本語
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+    <!-- Hero / Profile Section -->
+    <section id="about" class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+      <div class="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-8">
+        <div class="space-y-4 text-center md:text-left flex-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-brand-50 text-brand-800 border border-brand-100">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Academic Specialist <!--[cite: 1] -->
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Yihan Dong <!--[cite: 1] -->
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 font-medium">
+            Graduate School of Engineering, The University of Tokyo <!--[cite: 1] -->
+          </p>
+          <p class="text-sm text-slate-500 leading-relaxed max-w-2xl">
+            Postdoctoral researcher focused on Multi-Agent Systems, Game Theory, and Large Language Models, with a particular emphasis on formal consensus-reaching mechanisms and explainable decision-making. <!--[cite: 1] -->
+          </p>
+
+          <!-- Contact & Profiles -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2 text-xs sm:text-sm">
+            <a href="mailto:dongyihan0116@g.ecc.u-tokyo.ac.jp" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              dongyihan0116@g.ecc.u-tokyo.ac.jp <!--[cite: 1] -->
+            </a>
+            <a href="https://orcid.org/0009-0002-3562-6006" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+              <span class="font-bold text-[#A6CE39]">iD</span>
+              0009-0002-3562-6006 <!--[cite: 1] -->
+            </a>
+            <a href="./assets/cv-en.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-brand-700 text-white font-medium hover:bg-brand-800 transition shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <!-- Keywords -->
+          <div class="pt-3 flex flex-wrap gap-1.5 justify-center md:justify-start">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 font-medium">Multi-Agent System</span> <!--[cite: 1] -->
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 font-medium">Game Theory</span> <!--[cite: 1] -->
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 font-medium">Consensus-Reaching Process</span> <!--[cite: 1] -->
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 font-medium">Group Decision-Making</span> <!--[cite: 1] -->
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 font-medium">Large Language Model</span> <!--[cite: 1] -->
+          </div>
+        </div>
+
+        <!-- Profile Photo / Fallback -->
+        <div class="flex-shrink-0">
+          <img src="./assets/profile.jpg" alt="Yihan Dong" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Yihan+Dong&background=0369a1&color=fff&size=256';" class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl object-cover ring-4 ring-slate-100 shadow-md" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Framework Section -->
+    <section id="research" class="space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Research Framework</h2>
+        <p class="text-sm text-slate-500 mt-1">Consensus-Reaching Process Support with LLM-Based Multi-Agent Systems <!--[cite: 1] --></p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-slate-200">
+        <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+          My research focuses on establishing a principled framework for LLM-based Multi-Agent Systems (MAS) to support credible and interpretable consensus-reaching. <!--[cite: 1] -->
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+            <span class="p-1.5 rounded-lg bg-brand-50">01</span>
+            <h3>Structured Facilitation <!--[cite: 1] --></h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Demonstrating practical online deliberation by embedding LLM-based agents into explicit multi-phase workflows. <!--[cite: 1] -->
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+            <span class="p-1.5 rounded-lg bg-brand-50">02</span>
+            <h3>Explainable Credibility Judgment <!--[cite: 1] --></h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Making the results of LLM-based MAS decision-making explainable by designing an aggregation mechanism rather than solely depending on "LLM-as-a-judge". <!--[cite: 1] -->
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+            <span class="p-1.5 rounded-lg bg-brand-50">03</span>
+            <h3>Fuzzy Preference Elicitation & Analysis <!--[cite: 1] --></h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Bridging linguistic preferences and formal analysis through fuzzy preference elicitation and tolerance-aware judgment. <!--[cite: 1] -->
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+            <span class="p-1.5 rounded-lg bg-brand-50">04</span>
+            <h3>Cross-Paradigm Evaluation <!--[cite: 2] --></h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Formalising the multi-issue negotiation framework for LLM-based MAS to evaluate stability, cost, and fairness across mechanism-governed and prompt-based agents. <!--[cite: 2] -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Publications</h2>
+          <p class="text-sm text-slate-500 mt-1">Refereed journals, conferences, and symposia <!--[cite: 2, 5, 6] --></p>
+        </div>
+      </div>
+
+      <!-- Journal Articles -->
+      <div class="space-y-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Refereed Journal Articles</h3>
+        
+        <!-- Paper 1 -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">Journal (ESWA)</span>
+            <span class="text-xs text-slate-500">2026</span> <!--[cite: 2] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            From Consensus Theory to LLM Agents: Practical Consensus-Building for Multi-Issue Negotiation <!--[cite: 2] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Yihan Dong</strong>, Takayuki Ito <!--[cite: 2] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            Expert Systems with Applications, 2026. <!--[cite: 2] -->
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <a href="https://doi.org/10.1016/j.eswa.2026.132250" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-700 hover:underline font-medium">
+              DOI: 10.1016/j.eswa.2026.132250 &rarr; <!--[cite: 2] -->
+            </a>
+          </div>
+        </article>
+
+        <!-- Paper 2 -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">Journal (Sci Rep)</span>
+            <span class="text-xs text-slate-500">2026</span> <!--[cite: 2] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            Multi-agent systems and credibility-based advanced scoring mechanism in fact-checking <!--[cite: 2] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Yihan Dong</strong>, Takayuki Ito <!--[cite: 2] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            Scientific Reports, 2026. <!--[cite: 2] -->
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <a href="https://doi.org/10.1038/s41598-026-41862-z" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-700 hover:underline font-medium">
+              DOI: 10.1038/s41598-026-41862-z &rarr; <!--[cite: 2] -->
+            </a>
+          </div>
+        </article>
+
+        <!-- Paper 3 -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">Journal (IEICE)</span>
+            <span class="text-xs text-slate-500">2025</span> <!--[cite: 2] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            A Linguistic Negotiation for Consensus-Making among LLM Agents with Fuzzy Utility Functions <!--[cite: 2] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Yihan Dong</strong>, Takayuki Ito <!--[cite: 2] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            IEICE Transactions on Information and Systems, 2025. <!--[cite: 2] -->
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <a href="https://doi.org/10.1587/transinf.2025EDP7179" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-700 hover:underline font-medium">
+              DOI: 10.1587/transinf.2025EDP7179 &rarr; <!--[cite: 2] -->
+            </a>
+          </div>
+        </article>
+
+        <!-- Paper 4 -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">Journal (IEICE)</span>
+            <span class="text-xs text-slate-500">2023</span> <!--[cite: 2] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            An Automated Multi-Phase Facilitation Agent Based on LLM <!--[cite: 2] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Yihan Dong</strong>, Shiyao Ding, Takayuki Ito <!--[cite: 2] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            IEICE Transactions on Information and Systems, 2023. <!--[cite: 2] -->
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <a href="https://doi.org/10.1587/transinf.2023IHP0011" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-700 hover:underline font-medium">
+              DOI: 10.1587/transinf.2023IHP0011 &rarr; <!--[cite: 2] -->
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Conference & Consortium Proceedings -->
+      <div class="space-y-4 pt-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">International Conferences & Consortiums</h3>
+        
+        <!-- Paper 5 -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-blue-50 text-brand-700 border border-blue-200">AAMAS DC</span>
+            <span class="text-xs text-slate-500">2024</span> <!--[cite: 2] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            The Multi-agent System based on LLM for Online Discussions <!--[cite: 2] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Yihan Dong</strong> <!--[cite: 2] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            AAMAS Doctoral Consortium, 2024. <!--[cite: 2] -->
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <a href="https://doi.org/10.65109/joqg4094" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-700 hover:underline font-medium">
+              DOI: 10.65109/joqg4094 &rarr; <!--[cite: 2] -->
+            </a>
+          </div>
+        </article>
+
+        <!-- Paper 6 (from CV) -->
+        <article class="bg-white rounded-xl p-5 border border-slate-200 hover:border-slate-300 transition shadow-sm space-y-2.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-xs font-semibold bg-blue-50 text-brand-700 border border-blue-200">IEEE ICA</span>
+            <span class="text-xs text-slate-500">2023</span> <!--[cite: 6] -->
+          </div>
+          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+            Human Discussion Support through Multiagent System: A Multi-Phase Facilitation Agent based on LLM <!--[cite: 6] -->
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong class="text-slate-900">Dong, Y.</strong>, &amp; Ito, T. <!--[cite: 6] -->
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            The IEEE International Conference on Agentic AI (IEEE ICA) poster, 2023. <!--[cite: 6] -->
+          </p>
+        </article>
+      </div>
+
+      <!-- Domestic Conferences & Symposia -->
+      <div class="space-y-4 pt-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Domestic Conferences & Symposia (Japan)</h3>
+        <div class="bg-white rounded-xl p-5 border border-slate-200 divide-y divide-slate-100 text-xs sm:text-sm space-y-3">
+          <div class="pt-3 first:pt-0">
+            <p class="font-medium text-slate-800">Multi-agent Fact-checking based on Large Language Models <!--[cite: 6] --></p>
+            <p class="text-slate-500 text-xs mt-0.5">Dong, Y., &amp; Ito, T. &bull; IPSJ 86th National Convention, 2024. <!--[cite: 6] --></p>
+          </div>
+          <div class="pt-3">
+            <p class="font-medium text-slate-800">Fact-Checking Method for Multi-Agent Systems Based on Large Language Models <!--[cite: 6] --></p>
+            <p class="text-slate-500 text-xs mt-0.5">Dong, Y., &amp; Ito, T. &bull; JSAI 38th Annual Conference, 2024. <!--[cite: 6] --></p>
+          </div>
+          <div class="pt-3">
+            <p class="font-medium text-slate-800">A Case Study of the Automated Facilitation Agent Based on LLM <!--[cite: 6] --></p>
+            <p class="text-slate-500 text-xs mt-0.5">Dong, Y., &amp; Ito, T. &bull; Joint Agent Workshops and Symposium (JAWS), 2023. <!--[cite: 6] --></p>
+          </div>
+          <div class="pt-3">
+            <p class="font-medium text-slate-800">Comparison of the Accuracy of Classifying English Sentences According to IBIS Labels <!--[cite: 6] --></p>
+            <p class="text-slate-500 text-xs mt-0.5">Dong, Y., &amp; Ito, T. &bull; IPSJ 85th National Convention, 2023. <!--[cite: 6] --></p>
+          </div>
+          <div class="pt-3">
+            <p class="font-medium text-slate-800">An Implementation of An Automated Facilitation Agent Promoting Inclusive Discussion <!--[cite: 6] --></p>
+            <p class="text-slate-500 text-xs mt-0.5">Dong, Y., &amp; Ito, T. &bull; JSAI 37th Annual Conference, 2023. <!--[cite: 6] --></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Grid -->
+    <section id="experience" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Career Timeline -->
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Career</h2>
+        <div class="relative pl-6 border-l-2 border-slate-200 space-y-6">
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-700 border-2 border-white"></span>
+            <span class="text-xs font-semibold text-brand-700">2026/10 &ndash; Present</span> <!--[cite: 1] -->
+            <h3 class="text-sm font-bold text-slate-900">Academic Specialist</h3> <!--[cite: 1] -->
+            <p class="text-xs text-slate-600">The University of Tokyo <!--[cite: 1] --></p>
+            <p class="text-xs text-slate-500">Graduate School of Engineering &bull; Tokyo <!--[cite: 1] --></p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 border-2 border-white"></span>
+            <span class="text-xs font-semibold text-slate-500">2026/08 &ndash; 2026/09</span> <!--[cite: 1] -->
+            <h3 class="text-sm font-bold text-slate-900">Research Internship</h3> <!--[cite: 1] -->
+            <p class="text-xs text-slate-600">NEC Research &amp; Development <!--[cite: 1] --></p>
+            <p class="text-xs text-slate-500">Yokohama, Kanagawa <!--[cite: 1] --></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Education</h2>
+        <div class="relative pl-6 border-l-2 border-slate-200 space-y-6">
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-700 border-2 border-white"></span>
+            <span class="text-xs font-semibold text-brand-700">2022/10 &ndash; 2026/09</span> <!--[cite: 1] -->
+            <h3 class="text-sm font-bold text-slate-900">Ph.D. in Informatics</h3> <!--[cite: 1] -->
+            <p class="text-xs text-slate-600">Kyoto University <!--[cite: 1] --></p>
+            <p class="text-xs text-slate-500">Supervisor: Prof. Takayuki Ito &bull; Kyoto, Japan <!--[cite: 1] --></p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 border-2 border-white"></span>
+            <span class="text-xs font-semibold text-slate-500">2020/01 &ndash; 2021/12</span> <!--[cite: 1] -->
+            <h3 class="text-sm font-bold text-slate-900">Master of Engineering</h3> <!--[cite: 1] -->
+            <p class="text-xs text-slate-600">The University of Melbourne <!--[cite: 1] --></p>
+            <p class="text-xs text-slate-500">Melbourne, Victoria, Australia <!--[cite: 1] --></p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 border-2 border-white"></span>
+            <span class="text-xs font-semibold text-slate-500">2015/09 &ndash; 2019/06</span> <!--[cite: 1] -->
+            <h3 class="text-sm font-bold text-slate-900">Bachelor of Software Engineering</h3> <!--[cite: 1] -->
+            <p class="text-xs text-slate-600">Northeastern University <!--[cite: 1] --></p>
+            <p class="text-xs text-slate-500">Shenyang, Liaoning, China <!--[cite: 1] --></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Awards, Funding & Skills -->
+    <section id="awards" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Awards -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-3">
+        <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+          <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          Honours &amp; Awards
+        </h3>
+        <div class="space-y-1 text-xs">
+          <p class="font-semibold text-slate-800">Outstanding Research Award <!--[cite: 2] --></p>
+          <p class="text-slate-500">18th ICT Innovation, Kyoto University (2024/02/21) <!--[cite: 2] --></p>
+          <p class="text-slate-400 italic">"LLM-based Multi-agent Fact-checking System for Online Discussions" <!--[cite: 2] --></p>
+        </div>
+      </div>
+
+      <!-- Funding -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-3">
+        <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+          Research Funding
+        </h3>
+        <div class="space-y-1 text-xs">
+          <p class="font-semibold text-slate-800">Kyoto University Science and Technology Innovation Creation Fellowship <!--[cite: 3] --></p>
+          <p class="text-slate-500">Period: 2023/04/01 &ndash; 2025/09/30 <!--[cite: 3] --></p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-3">
+        <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L2.414 11l3.293 3.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L17.586 11l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          Skills &amp; Languages
+        </h3>
+        <div class="space-y-2 text-xs">
+          <div>
+            <span class="font-semibold text-slate-700">Programming:</span>
+            <span class="text-slate-600">Python (Proficient) <!--[cite: 2] --></span>
+          </div>
+          <div>
+            <span class="font-semibold text-slate-700">Languages:</span>
+            <span class="text-slate-600">English (Business), Japanese (Conversational), Mandarin (Native) <!--[cite: 2] --></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-8 mt-12 text-center text-xs text-slate-400">
+    <div class="max-w-5xl mx-auto px-4 space-y-1">
+      <p>&copy; 2026 Yihan Dong. Hosted on GitHub Pages.</p>
+      <p>Last updated: October 22, 2026 <!--[cite: 1] --></p>
+    </div>
+  </footer>
+
+</body>
+</html>
